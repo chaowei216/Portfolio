@@ -1,8 +1,17 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
+/* Custom styles */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0d1117; /* deep dark */
+  --foreground: #e6edf3; /* soft white */
+  --accent: #1f6feb; /* blue accent */
+  --card-bg: #161b22;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
 }
 
 @theme inline {
@@ -19,8 +28,18 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Subtle floating fade animation */
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-animate {
+  animation: floatUp 0.8s ease-out forwards;
 }
