@@ -15,24 +15,24 @@ export default function ProjectsPage() {
       time: 'Nov 2024 – Feb 2025',
       role: 'Backend Developer',
       description: `
-        Designed and developed a loan management platform enabling users to register, track, and repay loans.
-        Built using <span class="text-blue-400">Spring Boot</span> and <span class="text-blue-400">MySQL</span> in a microservice architecture.
-        Integrated <span class="text-blue-400">Docker</span> and CI/CD pipelines for seamless deployment.
-        Focused on secure data processing, scalability, and clear API documentation.
+        Developed a backend system enabling users to register, track, and repay loans, with comprehensive management tools for staff to oversee and manage loan records effectively.
+        Designed database schema using <span class="text-blue-400">MySQL</span> and implemented microservice architecture with <span class="text-blue-400">Spring Boot</span> and <span class="text-blue-400">Docker</span>.
+        Focused on creating efficient financial workflows and robust business logic to ensure reliability and scalability.
       `,
-      github: 'https://github.com/chaowei216/FinanceManagement_BE',
+      github: 'https://github.com/chaowei216/finance-management',
+      techs: ['Java', 'Spring Boot', 'Spring Cloud', 'MySQL', 'Docker'],
     },
     {
       name: 'Trendify',
       time: 'Oct 2024 – Nov 2024',
       role: 'Backend Developer',
       description: `
-        Created a complete <span class="text-blue-400">e-commerce</span> platform for T-shirt sales using 
-        <span class="text-blue-400">Spring Boot</span>, <span class="text-blue-400">ReactJS</span>, and <span class="text-blue-400">MySQL</span>.
-        Implemented authentication, product and order management APIs, and integrated a secure payment gateway.
-        Ensured fast response times and stable data flow between backend and frontend.
+        Developed a full-featured <span class="text-blue-400">e-commerce</span> platform for T-shirt sales with robust backend APIs and secure authentication.
+        Implemented product management, user authentication, and integrated payment gateway solutions using <span class="text-blue-400">Spring Boot</span> and <span class="text-blue-400">ReactJS</span>.
+        Created efficient database schema and core business logic for order processing and inventory management.
       `,
-      github: 'https://github.com/chaowei216/Trendify',
+      github: 'https://github.com/chaowei216/trendify',
+      techs: ['Java', 'Spring Boot', 'React', 'MySQL', 'Docker'],
     },
   ]
 
@@ -51,8 +51,8 @@ export default function ProjectsPage() {
           Featured <span className="text-blue-400">Projects</span>
         </h1>
         <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-          Selected projects that highlight my backend development experience, design thinking, and
-          problem-solving mindset.
+          A showcase of the projects I’ve built and contributed to — each one strengthening my
+          backend expertise and understanding of scalable systems.
         </p>
         <div className="mx-auto mt-3 w-24 h-[3px] bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded-full"></div>
       </motion.section>
@@ -90,11 +90,23 @@ export default function ProjectsPage() {
                   <p className="text-sm text-gray-400 mb-1">{proj.time}</p>
                   <p className="text-blue-400 font-medium mb-4">{proj.role}</p>
                   <p
-                    className="text-gray-300 text-sm leading-relaxed mb-4"
+                    className="text-gray-300 text-sm leading-relaxed mb-5"
                     dangerouslySetInnerHTML={{ __html: proj.description }}
                   ></p>
 
-                  {/* GitHub link */}
+                  {/* 🔹 Tech Stack Badges */}
+                  <div className="flex flex-wrap gap-2 mb-5">
+                    {proj.techs.map((tech, i) => (
+                      <span
+                        key={i}
+                        className="text-xs px-3 py-1 rounded-full border border-blue-500/40 text-blue-300 bg-blue-500/10 font-medium"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* 🔗 GitHub link */}
                   <a
                     href={proj.github}
                     target="_blank"
