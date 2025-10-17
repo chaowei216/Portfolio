@@ -44,7 +44,7 @@ export default function HomePage() {
           {/* 🔗 Contact Buttons */}
           <div className="flex justify-center gap-6 mt-8 flex-wrap">
             <a
-              href="mailto:you@example.com"
+              href="mailto:luutrieuvi2003@gmail.com"
               target="_blank"
               className="group flex items-center gap-2 rounded-full border border-blue-500 px-6 py-3
                        text-blue-400 hover:bg-blue-500/10 hover:text-blue-300 transition-all
@@ -55,7 +55,7 @@ export default function HomePage() {
             </a>
 
             <a
-              href="https://linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/tri%E1%BB%81u-v%C4%A9-l%C6%B0u-a151782a2/"
               target="_blank"
               className="group flex items-center gap-2 rounded-full border border-blue-500 px-6 py-3
                        text-blue-400 hover:bg-blue-500/10 hover:text-blue-300 transition-all
@@ -66,7 +66,7 @@ export default function HomePage() {
             </a>
 
             <a
-              href="https://github.com/your-github"
+              href="https://github.com/chaowei216"
               target="_blank"
               className="group flex items-center gap-2 rounded-full border border-blue-500 px-6 py-3
                        text-blue-400 hover:bg-blue-500/10 hover:text-blue-300 transition-all
