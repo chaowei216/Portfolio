@@ -10,15 +10,36 @@ export default function ExperiencePage() {
   }
 
   const domains = [
-    { name: 'Transportation', desc: 'Building tracking and logistics solutions.' },
+    { name: 'Shipping', desc: 'Building tracking and logistics solutions.' },
     { name: 'ERP', desc: 'Developing internal management systems for enterprises.' },
     { name: 'Construction', desc: 'Automating project and site coordination tools.' },
     { name: 'Management', desc: 'Supporting workflow and operations management.' },
     { name: 'Education', desc: 'Designing e-learning and student management systems.' },
     { name: 'Ecommerce', desc: 'Integrating product, order, and payment systems.' },
+    { name: 'Banking', desc: 'Building and supporting real banking systems and services.' },
   ]
 
   const experiences = [
+    {
+      company: 'Backbase',
+      time: 'Apr 2026 – Present',
+      position: 'Software Engineer',
+      responsibilities: [
+        'Work on real banking systems, handling production banking requests with high reliability requirements.',
+        'Optimize production performance, throughput, and memory usage.',
+        'Own deployments to lower environments and build new features while ensuring availability, consistency, and performance.',
+      ],
+    },
+    {
+      company: 'ST Engineering',
+      time: 'Nov 2025 – Apr 2026',
+      position: 'Software Engineer',
+      responsibilities: [
+        'Migrated a shipping system handling 500k+ requests per day.',
+        'Optimized database and queue performance, and handled data integration with external systems.',
+        'Ensured data consistency and system availability throughout the migration.',
+      ],
+    },
     {
       company: 'WALA-ICT',
       time: 'Aug 2025 – Sep 2025',

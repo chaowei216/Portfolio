@@ -36,7 +36,7 @@ export default function HomePage() {
             I’m a <span className="font-semibold text-white">software engineer</span> focusing
             mainly on <span className="font-semibold text-white">backend development</span>, and I
             also have some hands-on experience in crafting clean and responsive front-end
-            interfaces. With <span className="font-semibold text-white">one year</span> in the IT
+            interfaces. With <span className="font-semibold text-white">2+ years</span> in the IT
             field, I’m constantly learning, growing, and striving to become a senior engineer —
             passionate about building scalable, maintainable systems that deliver real impact.
           </p>

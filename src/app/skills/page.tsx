@@ -31,7 +31,7 @@ export default function SkillsPage() {
     {
       icon: <Cloud className="text-orange-400 w-8 h-8" />,
       title: 'Cloud',
-      items: ['AWS'],
+      items: ['AWS', 'Azure'],
       color: 'from-orange-500/20 to-orange-900/10',
     },
   ]

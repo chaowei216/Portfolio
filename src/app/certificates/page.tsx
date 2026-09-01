@@ -38,6 +38,30 @@ export default function CertificatesPage() {
       color: 'from-green-400 to-green-700',
       icon: <BookOpen className="text-green-400 w-6 h-6" />,
     },
+    {
+      type: 'Other',
+      title: 'Claude Code: Workflows and Tools',
+      organization: 'Educative',
+      year: '2026',
+      color: 'from-green-400 to-green-700',
+      icon: <BookOpen className="text-green-400 w-6 h-6" />,
+    },
+    {
+      type: 'Other',
+      title: 'Docker for Developers',
+      organization: 'Educative',
+      year: '2026',
+      color: 'from-green-400 to-green-700',
+      icon: <BookOpen className="text-green-400 w-6 h-6" />,
+    },
+    {
+      type: 'Other',
+      title: 'Integrate LDAP Authentication and Email Services in Your Web App',
+      organization: 'Educative',
+      year: '2026',
+      color: 'from-green-400 to-green-700',
+      icon: <BookOpen className="text-green-400 w-6 h-6" />,
+    },
   ]
 
   return (
